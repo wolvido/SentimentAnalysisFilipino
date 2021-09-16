@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+  </head>
+  <body>
+
+    {% extends "parent.html" %}
+    {% block content %}
+    
+    <h1>Sentiment Analysis</h1>
+    <p>enter a sentence in Tagalog</p>
+    <form method=post>
+      <input type=text name=text style="width:800px;font-size:14pt;">
+    </form>
+
+    <div class="item">
+    <h2> {{ sentiment }} </h2>
+    </div>
+    {% endblock %}
+
+  </body>
+</html>
